@@ -1,5 +1,5 @@
 # Customer_Churn
-2024-1학기 머신러닝 프로젝트 레포
+2024-1학기 머신러닝 프로젝트
 
 ## Table of Contents
 * [Problem Definition](#problem_definition)
@@ -27,6 +27,9 @@ We used various models for churn prediction, including Decision Tree, KNN, Rando
 
 ## Model Performance Comparison and Interpretation
 To interpret the models, we extracted Feature Importance for Decision Tree, Random Forest, XGBoost, and LightGBM. Decision Tree and Random Forest showed that tenure and Contract_Month-to-month were the most influential features. XGBoost and LightGBM also highlighted Contract_Month-to-month and tenure as critical features.
+
+<img src="https://github.com/BARAM1NG/Customer_Churn/assets/122276734/59b8beb7-ed95-4d69-ab1b-3a1bc6ebf522" alt="feature_importance" width="450"/>
+<img src="https://github.com/BARAM1NG/Customer_Churn/assets/122276734/211c3a41-628c-4368-aefd-67a0e0318593" alt="SHAP" width="450"/>
 
 Using SHAP for XGBoost and LightGBM, we found that tenure and Contract_Month-to-month significantly increased churn predictions, while InternetService_Fiber Optic decreased churn predictions, indicating the importance of service duration and bundled services in preventing customer churn.
 
